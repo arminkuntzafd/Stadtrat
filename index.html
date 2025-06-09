@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AfD Fraktion im Stadtrat Pirmasens">
+    <title>AfD Fraktion Pirmasens</title>
+    <link rel="stylesheet" href="style.css"> <!-- Dein Stylesheet -->
+</head>
+<body>
+
+    <!-- Header, Navigation und Footer werden hier dynamisch eingebunden -->
+    <div id="header-container"></div>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <section>
+            <h1>Willkommen auf der Webseite der AfD Fraktion im Stadtrat Pirmasens</h1>
+            <p>Wir setzen uns für Ihre Interessen im Stadtrat ein.</p>
+        </section>
+    </main>
+
+    <!-- JavaScript zum Laden von Header, Navigation und Footer -->
+    <script>
+        // Funktion, um Header, Navigation und Footer dynamisch zu laden
+        function loadContent() {
+            // Header und Footer laden
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                })
+                .catch(error => console.error('Fehler beim Laden von Header und Footer:', error));
+        }
+
+        // Inhalt beim Laden der Seite einfügen
+        window.onload = loadContent;
+    </script>
+
+</body>
+</html>
