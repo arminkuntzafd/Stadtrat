@@ -5,7 +5,6 @@ html, body {
   font-family: Arial, sans-serif;
   height: 100%; /* Sicherstellen, dass der Body die volle Höhe hat */
   overflow-x: hidden; /* Verhindern horizontales Scrollen */
-  font-family: Arial, sans-serif;
 }
 /* Hintergrund von index.html sicherstellen */
 body {
