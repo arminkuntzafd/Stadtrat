@@ -6,7 +6,10 @@ html, body {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+/* Hintergrund von index.html sicherstellen */
+body {
+  position: relative;
+  z-index: 0; /* Niedriger z-index, damit der Inhalt im Hintergrund bleibt */
 /* Navigation */
 nav {
   display: flex;
