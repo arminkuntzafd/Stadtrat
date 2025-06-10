@@ -2,8 +2,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Sicherstellen, dass der Body die volle Höhe hat */
+  overflow-x: hidden; /* Verhindern horizontales Scrollen */
   font-family: Arial, sans-serif;
 }
 /* Hintergrund von index.html sicherstellen */
