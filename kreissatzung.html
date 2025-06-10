@@ -1,6 +1,17 @@
 <!DOCTYPE html><!--[if IE]>  <html class="stl_ie"> <![endif]-->
 <html>
 	<head>
+	<link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = () => {
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.body.insertAdjacentHTML("afterbegin", data);
+        });
+    };
+  </script>
+		
 		<meta charset="utf-8" />
 		<title>
 		</title>
