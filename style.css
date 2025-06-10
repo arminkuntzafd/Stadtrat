@@ -1,5 +1,5 @@
 .dropdown-content {
-  z-index: 2000; /* Oder ein anderer hoher Wert */
+  z-index: 1000; /* Oder ein anderer hoher Wert */
   position: absolute;
 /* Allgemeine Stile */
 html, body {
