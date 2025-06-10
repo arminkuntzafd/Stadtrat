@@ -1,3 +1,19 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    flex-wrap: nowrap;       /* Kein Zeilenumbruch */
+    overflow-x: auto;        /* Scrollbar bei Bedarf */
+    white-space: nowrap;     /* Verhindert Umbrüche */
+}
+
 /* Volle Breite für HTML und Body */
 html, body {
     margin: 0;
