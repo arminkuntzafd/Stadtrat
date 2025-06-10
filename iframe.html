@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="style.css">
   <script>
     window.onload = () => {
-      fetch("header.html")
+      fetch("header.html")  // Lädt den Header von der externen Datei
         .then(res => res.text())
         .then(data => {
           document.body.insertAdjacentHTML("afterbegin", data);
@@ -20,7 +20,7 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      overflow: hidden; /* verhindert Scrollen */
+      overflow: hidden; /* Verhindert Scrollen */
     }
     iframe {
       width: 100%;
@@ -31,6 +31,7 @@
 </head>
 <body>
 
+  <!-- iFrame für PDF -->
   <iframe id="kreissatzung" src="Satzung_Kreis.pdf"></iframe>
 
   <script>
@@ -39,7 +40,8 @@
     const src = params.get("src");
 
     if (src) {
-      document.getElementById("mainFrame").src = src;
+      // Setzt das src-Attribut des iFrame mit dem ausgewählten PDF
+      document.getElementById("kreissatzung").src = src;
     } else {
       document.body.innerHTML = "<p style='text-align:center;padding:20px;'>Kein Inhalt ausgewählt.</p>";
     }
