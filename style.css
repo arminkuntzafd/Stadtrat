@@ -1,3 +1,18 @@
+.menu-item {
+  position: relative; /* Damit die Dropdowns relativ zu diesem Container positioniert werden */
+}
+
+.dropdown-content {
+  position: absolute; /* Positioniert das Dropdown relativ zum Eltern-Container */
+  top: 100%; /* Direkt unter dem Menü-Item */
+  left: 0;
+  z-index: 1000; /* Hoch genug, um über anderen Elementen zu liegen */
+  display: none; /* Standardmäßig versteckt */
+}
+
+.menu-item:hover .dropdown-content {
+  display: block; /* Beim Hover sichtbar */
+}
 /* Allgemeine Stile */
 html, body {
   margin: 0;
